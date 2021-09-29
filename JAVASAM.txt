@@ -1,0 +1,297 @@
+Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
+
+Any hardware or software environment in which a program runs, is known as a platform. Since Java has a runtime environment (JRE) and API, it is called a 
+
+platform.
+
+There are many devices where Java is currently used. Some of them are as follows:
+
+Desktop Applications such as acrobat reader, media player, antivirus, etc.
+Web Applications such as irctc.co.in, javatpoint.com, etc.
+Enterprise Applications such as banking applications.
+Mobile
+Embedded System
+Smart Card
+Robotics
+Games, etc.
+
+Types of Java Applications::
+
+There are mainly 4 types of applications that can be created using Java programming:
+
+1) Standalone Application
+Standalone applications are also known as desktop applications or window-based applications. These are traditional software that we need to install on every 
+
+machine. Examples of standalone application are Media player, antivirus, etc. AWT and Swing are used in Java for creating standalone applications.
+
+2) Web Application
+An application that runs on the server side and creates a dynamic page is called a web application. Currently, Servlet, JSP, Struts, Spring, Hibernate, JSF, 
+
+etc. technologies are used for creating web applications in Java.
+
+3) Enterprise Application
+An application that is distributed in nature, such as banking applications, etc. is called enterprise application. It has advantages of the high-level security, 
+
+load balancing, and clustering. In Java, EJB is used for creating enterprise applications.
+
+4) Mobile Application
+An application which is created for mobile devices is called a mobile application. Currently, Android and Java ME are used for creating mobile applications.
+
+
+1) Java SE (Java Standard Edition)
+It is a Java programming platform. It includes Java programming APIs such as java.lang, java.io, java.net, java.util, java.sql, java.math etc. It includes core 
+
+topics like OOPs, String, Regex, Exception, Inner classes, Multithreading, I/O Stream, Networking, AWT, Swing, Reflection, Collection, etc.
+
+2) Java EE (Java Enterprise Edition)
+It is an enterprise platform which is mainly used to develop web and enterprise applications. It is built on the top of the Java SE platform. It includes topics 
+
+like Servlet, JSP, Web Services, EJB, JPA, etc.
+
+3) Java ME (Java Micro Edition)
+It is a micro platform which is mainly used to develop mobile applications.
+
+JVM:::
+
+JVM (Java Virtual Machine) is an abstract machine. It is called a virtual machine because it doesn't physically exist. It is a specification that provides a 
+
+runtime environment in which Java bytecode can be executed. It can also run those programs which are written in other languages and compiled to Java 
+
+bytecode.
+
+JVMs are available for many hardware and software platforms. JVM, JRE, and JDK are platform dependent because the configuration of each OS is 
+
+different from each other. However, Java is platform independent. There are three notions of the JVM: specification, implementation, and instance.
+
+The JVM performs the following main tasks:
+
+Loads code
+Verifies code
+Executes code
+Provides runtime environment
+
+JRE:::
+
+JRE is an acronym for Java Runtime Environment. It is also written as Java RTE. The Java Runtime Environment is a set of software tools which are used 
+
+for developing Java applications. It is used to provide the runtime environment. It is the implementation of JVM. It physically exists. It contains a set of 
+
+libraries + other files that JVM uses at runtime.
+
+
+JDK::
+
+JDK is an acronym for Java Development Kit. The Java Development Kit (JDK) is a software development environment which is used to develop Java 
+
+applications and applets. It physically exists. It contains JRE + development tools.
+
+JDK is an implementation of any one of the below given Java Platforms released by Oracle Corporation:
+
+Standard Edition Java Platform
+Enterprise Edition Java Platform
+Micro Edition Java Platform
+The JDK contains a private Java Virtual Machine (JVM) and a few other resources such as an interpreter/loader (java), a compiler (javac), an archiver (jar), 
+
+a documentation generator (Javadoc), etc. to complete the development of a Java Application.
+
+Platform Independent:::;
+
+Java is platform independent because it is different from other languages like C, C++, etc. which are compiled into platform specific machines while Java is a 
+
+""""write once, run anywhere""" language. A platform is the hardware or software environment in which a program runs.
+
+There are two types of platforms software-based and hardware-based. Java provides a software-based platform.
+
+The Java platform differs from most other platforms in the sense that it is a software-based platform that runs on top of other hardware-based platforms. It 
+
+has two components:
+
+---Runtime Environment
+---API(Application Programming Interface)
+
+Java code can be executed on multiple platforms, for example, Windows, Linux, Sun Solaris, Mac/OS, etc. Java code is compiled by the compiler and 
+
+converted into bytecode. This bytecode is a platform-independent code because it can be run on multiple platforms, i.e., Write Once and Run Anywhere 
+
+(WORA).
+
+Robust::::
+
+The English mining of Robust is strong. Java is robust because:
+
+It uses strong memory management.
+There is a lack of pointers that avoids security problems.
+Java provides ""automatic garbage collection"" which runs on the Java Virtual Machine to get rid of objects which are not being used by a Java application 
+
+anymore.
+There are exception handling and the type checking mechanism in Java. All these points make Java robust.
+
+Architecture-neutral:::
+
+Java is architecture neutral because there are no implementation dependent features, for example, the size of primitive types is fixed.
+
+In C programming, int data type occupies 2 bytes of memory for 32-bit architecture and 4 bytes of memory for 64-bit architecture. However, it occupies 4 
+
+bytes of memory for both 32 and 64-bit architectures in Java.
+
+Portable:::
+
+Java is portable because it facilitates you to carry the Java bytecode to any platform. It doesn't require any implementation.
+
+Multi-threaded::::
+
+A thread is like a separate program, executing concurrently. We can write Java programs that deal with many tasks at once by defining multiple threads. The 
+
+main advantage of multi-threading is that it doesn't occupy memory for each thread. It shares a common memory area. Threads are important for multi-
+
+media, Web applications, etc.
+
+Dynamic:::
+Java is a dynamic language. It supports the dynamic loading of classes. It means classes are loaded on demand. It also supports functions from its native 
+
+languages, i.e., C and C++.
+
+
+Java supports dynamic compilation and automatic memory management (garbage collection).
+
+=========================================================================================
+What is JVM???
+
+It is:
+
+A specification where working of Java Virtual Machine is specified. But implementation provider is independent to choose the algorithm. Its implementation 
+
+has been provided by Oracle and other companies.
+An implementation Its implementation is known as JRE (Java Runtime Environment).
+Runtime Instance Whenever you write java command on the command prompt to run the java class, an instance of JVM is created.
+
+The JVM performs following operation:
+
+Loads code
+Verifies code
+Executes code
+Provides runtime environment
+JVM provides definitions for the:
+
+--Memory area
+--Class file format
+--Register set
+--Garbage-collected heap
+--Fatal error reporting etc.
+
+JVM Architecture
+Let's understand the internal architecture of JVM. It contains classloader, memory area, execution engine etc.
+
+JVM Architecture
+
+1) Classloader
+Classloader is a subsystem of JVM which is used to load class files. Whenever we run the java program, it is loaded first by the classloader. There are three 
+
+built-in classloaders in Java.
+
+Bootstrap ClassLoader: This is the first classloader which is the super class of Extension classloader. It loads the rt.jar file which contains all class files of 
+
+Java Standard Edition like java.lang package classes, java.net package classes, java.util package classes, java.io package classes, java.sql package classes etc.
+
+Extension ClassLoader: This is the child classloader of Bootstrap and parent classloader of System classloader. It loades the jar files located inside 
+
+$JAVA_HOME/jre/lib/ext directory.
+
+System/Application ClassLoader: This is the child classloader of Extension classloader. It loads the classfiles from classpath. By default, classpath is set to 
+
+current directory. You can change the classpath using "-cp" or "-classpath" switch. It is also known as Application classloader.
+
+2) Class(Method) Area
+Class(Method) Area stores per-class structures such as the runtime constant pool, field and method data, the code for methods.
+
+3) Heap
+It is the runtime data area in which objects are allocated.
+
+4) Stack
+Java Stack stores frames. It holds local variables and partial results, and plays a part in method invocation and return.
+
+Each thread has a private JVM stack, created at the same time as thread.
+
+A new frame is created each time a method is invoked. A frame is destroyed when its method invocation completes.
+
+5) Program Counter Register
+PC (program counter) register contains the address of the Java virtual machine instruction currently being executed.
+
+6) Native Method Stack
+It contains all the native methods used in the application.
+
+7) Execution Engine
+It contains:
+
+A virtual processor
+Interpreter: Read bytecode stream then execute the instructions.
+Just-In-Time(JIT) compiler: It is used to improve the performance. JIT compiles parts of the byte code that have similar functionality at the same time, and 
+
+hence reduces the amount of time needed for compilation. Here, the term "compiler" refers to a translator from the instruction set of a Java virtual machine 
+
+(JVM) to the instruction set of a specific CPU.
+
+8) Java Native Interface
+Java Native Interface (JNI) is a framework which provides an interface to communicate with another application written in another language like C, C++, 
+
+Assembly etc. Java uses JNI framework to send output to the Console or interact with OS libraries.
+
+=============================================================================================
+Java Development Kit (JDK) is a software development environment used for developing Java applications and applets. It includes the Java Runtime 
+
+Environment (JRE), an interpreter/loader (Java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), and other tools needed in Java 
+
+development. 
+
+Now we need an environment to make a run of our program. Henceforth, JRE stands for “Java Runtime Environment” and may also be written as “Java 
+
+RTE.” The Java Runtime Environment provides the minimum requirements for executing a Java application; it consists of the Java Virtual Machine (JVM), 
+
+core classes, and supporting files. 
+
+Now let us discuss JVM, which stands out for java virtual machine. It is as follows:
+
+A specification where the working of Java Virtual Machine is specified. But implementation provider is independent to choose the algorithm. Its 
+
+implementation has been provided by Sun and other companies.
+--An implementation is a computer program that meets the requirements of the JVM specification.
+--Runtime Instance Whenever you write a java command on the command prompt to run the java class, an instance of JVM is created.
+
+
+1. JDK (Java Development Kit) is a Kit that provides the environment to develop and execute(run) the Java program. JDK is a kit(or package) that includes 
+
+two things
+
+Development Tools(to provide an environment to develop your java programs)
+JRE (to execute your java program).
+ 
+2. JRE (Java Runtime Environment) is an installation package that provides an environment to only run(not develop) the java program(or application)onto 
+
+your machine. JRE is only used by those who only want to run Java programs that are end-users of your system.
+ 
+
+3. JVM (Java Virtual Machine) is a very important part of both JDK and JRE because it is contained or inbuilt in both. Whatever Java program you run 
+
+using JRE or JDK goes into JVM and JVM is responsible for executing the java program line by line, hence it is also known as an interpreter.
+
+
+JVM becomes an instance of JRE at the runtime of a Java program. It is widely known as a runtime interpreter.JVM largely helps in the abstraction of inner 
+
+implementation from the programmers who make use of libraries for their programs from JDK. 
+
+It is mainly responsible for three activities. 
+
+Loading
+Linking
+Initialization
+
+JVM(Java Virtual Machine) acts as a run-time engine to run Java applications. JVM is the one that actually calls the main method present in a java code. 
+
+JVM is a part of JRE(Java Runtime Environment).
+
+Java applications are called WORA (Write Once Run Anywhere). This means a programmer can develop Java code on one system and can expect it to run on 
+
+any other Java-enabled system without any adjustments. This is all possible because of JVM.
+
+
+-====================================================================================
